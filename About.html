@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+<title>Paws And Crawls</title> 
+<link rel="stylesheet" type="text/css" href="Divya.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head> 
+<body> 
+    <section class="About-header">
+        <nav>
+            <a href="index.html">PAWS AND CRAWLS</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="Location.html">Share your location</a></li>
+                    <li><a href="Donate.html">Donate</a></li>
+                    <li><a href="vegan.html">Veganism</a></li>
+                    <li><a href="people.html">Pepole Against Animal Cruelty</a></li>
+                    <li><a href="">AboutUs</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>ABOUT US</h1>
+    </section>
+    <section class="organisation">
+        <h1>People For Animals</h1>
+        <h2>Our Story</h2>
+        <p style="line-height: 30px;">The PEPOLE FOR ANIMALS(PFA) is a non-profit public benefit charitable organization committed to giving homeless cats and dogs another chance for a healthy and happy life by finding them good, loving homes. PFA is supported solely by private donations and fundraising projects.</p>
+        <p style="line-height: 30px;">Our Adoption Counselors assist in finding the right pet based on personalities and lifestyle. Individuals who adopt our animals go through an extensive adoption process where they are counseled on the medical, physical and emotional needs of the particular dog or cat they are adopting. After the adoption, the staff and volunteers at the center are always available to help with any questions or issues that may arise.</p>
+        <p style="line-height: 30px;">Caring for homeless pets is not all the PEPOLE FOR ANIMALS(PFA)  is very active in promoting animal welfare and positive human-animal relations through community-service programs which include humane education, pet behavior counseling, and support of pet overpopulation education and programs.</p>
+        <h2>Mission Statement</h2>
+        <p style="line-height: 30px;">PEPOLE FOR ANIMALS(PFA) Adoption Center strives to eliminate the suffering of homeless cats and dogs by providing humane care for pets in transition, facilitating adoptions to good homes, supporting pet overpopulation education, and supporting sterilization of companion animals.</p>
+        
+    </section>
+
+
+<!---------- Footer -------->
+
+    <section class="footer">
+        <div class="row">
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p style="line-height: 30px;">Email:- abc@gmail.com <br>Phone:- 123456789</p>
+            </div>
+            <div class="contact">
+                <h3>Any complaints</h3>
+                <p>For any query and complaint please call us or write an email</p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!---------Javascript for toggle menu------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body> 
+</html>

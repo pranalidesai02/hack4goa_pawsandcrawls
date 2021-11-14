@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./Images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    width: 300px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+    color: #fff;
+}
+.text-box h2{
+    margin: 10px 0 10px;
+    font-size: 50px;
+    color: #fff;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box h2{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*------ The Problem------*/
+.problem{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+p{
+    color: #000;
+    font-size: 20px;
+    word-spacing: 2px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+
+/*------ Objective ------*/
+.objective{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 20px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 1000;
+    
+}
+.objective ul{
+    color: #808080;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    padding:10px;
+}
+.objective ul{
+    list-style-type: disc;
+}
+
+/*-------Table-------*/
+
+.Table{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+}
+table{
+    border-collapse: collapse;
+    width: 50%;
+    text-align: left;
+    margin-left: 160px;
+    margin-right: auto;
+    margin-top: 20px;
+    
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+.Table p{
+    color: #000;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+    padding:10px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+/*---------Stray--------*/
+
+.Stray{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.Stray h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.Stray ul{
+    color: #000;
+    text-align: left;
+    font-weight: 300;
+    font-size: 18px;
+    padding:10px;
+}
+Stray .ul{
+    list-style-type: circle;
+}
+
+
+/*--------Donate--------*/
+.Donate{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #808080;
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+p{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+.Donate a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 100px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/*---------Pledge--------*/
+.Pledge{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(D:\images/vegan.png);
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 12px;
+}
+.Pledge a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 12px 100px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.footer{
+    width: 80%;
+    margin:auto;
+    padding-top: 5px;
+    text-align: center;
+    background-color: #000;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.row h3{
+    font-size: 15px;
+    color: #fff;
+}
+.row p{
+    font-size: 15px;
+    color: #fff;
+}
+
+/*-----------Sharing Location------------*/
+
+.location-header {
+    height: 60vh;
+    width: 100%;
+    background-image:url(./Images/sharelocation.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.location-header h1{
+    margin-top: 100px;
+    font-size: 75px;
+    color: #fff;
+}
+/*---------------Content------------*/
+.content{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.content p{
+    font-size: 20px;
+    text-align: left;
+}
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+.content ul{
+    color: #808080;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    padding:10px;
+}
+.content ul{
+    list-style-type: disc;
+}
+
+
+/*------------Location-----------------*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+}
+.location iframe{
+    width: 100%;
+}
+
+/*------------------Donate----------------*/
+.donate-header {
+    height: 60vh;
+    width: 100%;
+    background-image:url(./Images/help.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+.donate-header h1{
+    margin-top: 100px;
+    font-size: 75px;
+    color: #fff;
+}
+
+/*------------------barcode------------------*/
+.barcode{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.barcode h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #000;
+}
+.barcode img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*------------------information----------------*/
+.vegan-header {
+    height: 60vh;
+    width: 100%;
+    background-image:url(./Images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.vegan-header h1{
+    margin-top: 100px;
+    font-size: 75px;
+    color: #fff;
+}
+.information h1{
+    width: 80%;
+    font-size: 25px;
+    margin: auto;
+    text-align: left;
+}
+.information p{
+    width: 80%;
+    font-size: 15px;
+    margin: auto;
+    text-align: left;
+}
+.information ul{
+    color: #000;
+    text-align: left;
+    font-weight: 300;
+    font-size: 18px;
+    padding:10px;
+    padding-bottom: 20px;
+    margin-left: 200px;
+}
+information .ul{
+    list-style-type: circle;
+}
+
+/*------------About Us-------------*/
+
+.About-header {
+    height: 60vh;
+    width: 100%;
+    background-image:url(./Images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.About-header h1{
+    margin-top: 100px;
+    font-size: 75px;
+    color: #fff;
+}
+.organisation{
+    width: 80%;
+    font-size: 25px;
+    margin: auto;
+}
+.organisation h1{
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+.organisation h2{
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: left;
+}
+.organisation p{
+    font-size: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+/*--------------People--------------*/
+.people-header {
+    height: 60vh;
+    width: 100%;
+    background-image:url(./Images/peopleagainst.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.people-header h1{
+    margin-top: 100px;
+    font-size: 75px;
+    color: #fff;
+}
+.Adoption{
+    width: 80%;
+    font-size: 25px;
+    margin: auto;
+}
+.Adoption h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: #000;
+}
+.Adoption img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Adoption h2{
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #000;
+}
+
+
+
+
+

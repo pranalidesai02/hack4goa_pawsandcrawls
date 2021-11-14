@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+<title>Paws And Crawls</title> 
+<link rel="stylesheet" type="text/css" href="Divya.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head> 
+<body> 
+    <section class="vegan-header">
+        <nav>
+            <a href="index.html">PAWS AND CRAWLS</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="Location.html">Share your location</a></li>
+                    <li><a href="Donate.html">Donate</a></li>
+                    <li><a href="">Veganism</a></li>
+                    <li><a href="people.html">Pepole Against Animal Cruelty</a></li>
+                    <li><a href="About.html">AboutUs</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Being a vegan</h1>
+    </section>
+    <section class="information">
+        <h1>Veganism</h1>
+        <p style="line-height: 30px;">Veganism is a philosophy and way of living which seeks to exclude—as far as is possible and practicable—all forms of exploitation of, and cruelty to, animals for food, clothing or any other purpose; and by extension, promotes the development and use of animal-free alternatives for the benefit of animals, humans and the environment. In dietary terms it denotes the practice of dispensing with all products derived wholly or partly from animals.</p>
+        <h1>Why Veganism?</h1>
+        <p style="line-height: 30px;">Preventing the exploitation of animals is not the only reason for becoming vegan, but for many it remains the key factor in their decision to go vegan and stay vegan. Having emotional attachments with animals may form part of that reason, while many believe that all sentient creatures have a right to life and freedom. Specifics aside, avoiding animal products is one of the most obvious ways you can take a stand against animal cruelty and animal exploitation everywhere.</p>
+        <h1>Take a pledge for being a Vegan today!!</h1>
+        <ul class="a">
+            <li>I take this pledge that I would be a successful Vegan from now</li>
+            <li>I will not eat any animal based food nor use any animal based products</li>
+            <li>I would take a stand against animal cruelty and animal exploitation</li>
+            <li>I will always promote friendliness and helpfulness toward all living creature</li>
+            <li>And I will understand and teach others that we are not alone on this planet, we share it with thousands of species of animals, all the species have right to life and freedom.</li>
+        </ul>
+
+    </section>
+
+
+<!---------- Footer -------->
+
+    <section class="footer">
+        <div class="row">
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p style="line-height: 30px;">Email:- abc@gmail.com <br>Phone:- 123456789</p>
+            </div>
+            <div class="contact">
+                <h3>Any complaints</h3>
+                <p>For any query and complaint please call us or write an email</p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!---------Javascript for toggle menu------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body> 
+</html>

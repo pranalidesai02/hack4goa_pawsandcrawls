@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+<title>Paws And Crawls</title> 
+<link rel="stylesheet" type="text/css" href="Divya.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head> 
+<body> 
+    <section class="header">
+        <nav>
+            <a href="index.html">PAWS AND CRAWLS</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="Location.html">Share your location</a></li>
+                    <li><a href="Donate.html">Donate</a></li>
+                    <li><a href="vegan.html">Veganism</a></li>
+                    <li><a href="people.html">Pepole Against Animal Cruelty</a></li>
+                    <li><a href="About.html">AboutUs</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>PAWS AND CRAWLS</h1>
+            <h2>#Can't Purchase Love Protect It</h2>
+            <h2>#Adopt Rescue Advocate</h2>
+        </div>
+    </section>
+    <!-------------The Problem-->
+    <section class="problem">
+        <h1 style="font-size: 30px;color: #000;">The Problem</h1>
+        <p style="line-height: 30px;">Human beings, ever since its creation has never been alone on the earth. As we all know we share this planet with lots of different species of living creatures, such as animals, and plants. But even though we name ourselves the superior species due to our ability to think, make decisions and choose how we want to live our lives, we start to grow. This led to us somehow neglecting the fact that we are not alone in this planet. We start pushing other species out of the way, and we sometimes don’t realize that the impact felt by those other species has terrible and sometimes deadly consequences, and also we sometimes fail to understand that it can also cause harm to us.</p>
+
+    </section>
+
+    <!--------Objectives--------->
+    <section class="objective">
+        <h1 style="font-size: 30px;color: #000;">Our objective</h1>
+        <ul class="b">
+        <li>Developing a positive human-companion animal relationship for our street animals. </li>
+        <li>Campaigning to end the use of all animals in entertainment, sacrifice and captivity. </li>
+        <li>Educating, researching and litigating to end the use and abuse of animals in food and clothing.</li>
+        </ul>
+    </section>
+    <!-------Statsistics of Injured Animals-------->
+    <section class="Table">
+        <h1 style="font-size: 30px;color: #000;">Statsistics of Injured Animals</h1>
+        <table>
+            <tr>
+                <th>year</th>
+                <th>Animal Injured</th>
+            </tr>
+            <tr>
+                <td>2011-2012</td>
+                <td>526</td>
+            </tr>
+            <tr>
+                <td>2012-2013</td>
+                <td>1217</td>
+            </tr>
+            <tr>
+                <td>2013-2014</td>
+                <td>1126</td>
+            </tr>
+            <tr>
+                <td>2014-2015</td>
+                <td>652</td>
+            </tr>
+            <tr>
+                <td>2015-2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>2016-2017</td>
+                <td>1923</td>
+            </tr>
+            <tr>
+                <td>2017-2018</td>
+                <td>1054</td>
+            </tr>
+            <tr>
+                <td>2018-2019</td>
+                <td>2806</td>
+            </tr>
+            <tr>
+                <td>2019-2020</td>
+                <td>1011</td>
+            </tr>
+        </table>
+        <p>Every day 8 out of 10 stray animals are injured due to road accidents.</p>
+        <p>30 Million dogs die every year due to road accidents in the world.</p>
+    </section>
+    <section class="Stray">
+        <h1 style="font-size: 30px;color: #000;">How Can We Save Stray Animals</h1>
+        <ul class="a">
+        <li>Adopt- By adopting you make a loving animal part of your family. Adopt animals rather than buying them, it may save a life.</li>
+        <li>Donate- Donate for animals to make a happy change in their life.</li>
+        <li>Volunteer- If you don’t have money to give, you may give your time and care for them, or just send them to an animal shelter.</li>
+        <li>Speak Up- Speak up for these animals even they emotions, difference is that they can’t express but we can.</li>
+        <li>Follow Veganism- Veganism is a philosophy and way of living which seeks to exclude—as far as is possible and practicable—all forms of exploitation of, and cruelty to, animals for food, clothing or any other purpose</li>
+        </ul>
+    </section>
+    <section class="Donate">
+        <h1>DONATE</h1>
+        <p>Animals feel. They think, they know, they suffer. Help us to protect them. We fight for their freedom and joy.</p>
+        <a href="Donate.html" class="hero-btn">Donate</a>
+    </section>
+    <section class="Pledge">
+        <h1>Take A Pledge To Be Vegan</h1>
+        <a href="vegan.html" class="hero-btn">Take The Pledge</a>
+    </section>
+
+
+
+<!---------- Footer -------->
+
+    <section class="footer">
+        <div class="row">
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p style="line-height: 30px;">Email:- abc@gmail.com <br>Phone:- 123456789</p>
+            </div>
+            <div class="contact">
+                <h3>Any complaints</h3>
+                <p>For any query and complaint please call us or write an email</p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!---------Javascript for toggle menu------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body> 
+</html>
